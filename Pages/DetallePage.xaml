@@ -2,10 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheSimpsons.Pages.DetallePage"
-             Title="DetallePage">
-    <VerticalStackLayout>
-        <Label 
-            x:Name="lblPersonaje"/>
-        <Label x:Name ="lblEdad"></Label>
-    </VerticalStackLayout>
+             Title="Detalle del Personaje">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="5">
+
+            <Image x:Name="imgPersonaje"
+             HeightRequest="200"
+             Aspect="AspectFit"
+             Margin="0,0,0,20" />
+
+            <Label x:Name="lblPersonaje"
+             FontSize="28"
+             FontAttributes="Bold"
+             HorizontalOptions="Center"
+             Margin="0,0,0,20" />
+
+            <Label Text="Edad:" FontAttributes="Bold" />
+            <Label x:Name="lblEdad" Margin="0,0,0,10" />
+
+            <Label Text="Ocupación:" FontAttributes="Bold" />
+            <Label x:Name="lblOcupacion" Margin="0,0,0,10" />
+
+            <Label Text="Estado:" FontAttributes="Bold" />
+            <Label x:Name="lblEstado" Margin="0,0,0,10" />
+
+            <Label Text="Descripción:" FontAttributes="Bold" />
+            <Label x:Name="lblDescripcion" />
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
